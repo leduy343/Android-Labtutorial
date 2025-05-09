@@ -7,13 +7,83 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="Name: "
+                />
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="Weight: "
+                />
+            <EditText
+                android:id="@+id/edtWeight"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:text="height: "
+                />
+            <EditText
+                android:id="@+id/edtHeight"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btnBmi"
+                android:layout_weight="1"
+                android:text="BMI"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+
+                android:text="BMI = "
+                />
+            <EditText
+                android:id="@+id/edtBmi"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="Diagnosis : "
+                />
+            <EditText
+                android:id="@+id/edtDiag"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
